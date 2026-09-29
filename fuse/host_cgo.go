@@ -460,7 +460,6 @@ static inline void hostAsgnCconfig(struct fuse_config *conf,
 	bool direct_io,
 	bool use_ino)
 {
-	memset(conf, 0, sizeof *conf);
 	conf->direct_io = direct_io;
 	conf->use_ino = use_ino;
 }
